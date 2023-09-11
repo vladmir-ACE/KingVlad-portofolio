@@ -39,7 +39,7 @@ body{
 }
 
 .gradient-text {
-    background: linear-gradient(to right, #FFFFFF, #006633); /* Dégradé horizontal de couleurs */
+    background: linear-gradient(to right,#006633,#FFFFFF); /* Dégradé horizontal de couleurs */
     -webkit-background-clip: text; /* Applique le dégradé au texte */
     color: transparent; /* Rend le texte lui-même transparent pour laisser apparaître le dégradé */
     font-size: 40px; /* Ajustez la taille de la police selon vos besoins */
@@ -49,7 +49,44 @@ body{
 .emoji{
     color: black;
 }
+.techImg{
+    width: 150px;
+    height: 150px;
+    padding-left:15%;
+    padding-top: 10%;
+}
+.card-containt{
+width: 100%;
 
+padding-top: 5%;
+border-radius: 10%;
+}
+.cardImg{
+    width: 12rem;
+}
 
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+/* Appliquez l'animation aux cartes */
+.bounce {
+    animation: bounce 2s infinite;
+}
 
+.Icone{
+width: 20px;
+height: 20px;
 
+}
+
+.foot{
+    padding-top: 2%;
+}
