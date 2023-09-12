@@ -90,3 +90,17 @@ height: 20px;
 .foot{
     padding-top: 2%;
 }
+
+/* projet style */
+
+.pr-logo{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+.projet-ListeDiv{
+
+    background-color: white;
+    border-bottom: #0f0c29 solid;
+}
