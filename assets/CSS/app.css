@@ -104,3 +104,16 @@ height: 20px;
     background-color: white;
     border-bottom: #0f0c29 solid;
 }
+
+.popup-button {
+    animation: pop-up 1s infinite alternate;
+  }
+  
+  @keyframes pop-up {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
