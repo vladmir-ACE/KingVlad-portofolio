@@ -14,28 +14,45 @@
             font-size: 24px; /* Réduire la taille de la police pour les écrans plus petits */
         }
 
-        
-
         .emoji {
             font-size: 24px; /* Réduire la taille de la police pour les écrans plus petits */
         }
-
-
 
         /* Rendre les cartes plus flexibles */
         .card-containt .card {
             flex: 0 0 calc(33.333% - 20px); /* Utilisez la flexbox pour les disposer en 3 colonnes */
             margin: 10px;
         }
+
+        /* Styles pour les écrans de petite taille */
+        @media (max-width: 767px) {
+            .navbar-brand {
+                font-size: 20px;
+            }
+
+            .emoji {
+                font-size: 20px;
+            }
+        }
+
+        /* Styles pour les écrans de taille moyenne */
+        @media (min-width: 768px) and (max-width: 991px) {
+            .navbar-brand {
+                font-size: 28px;
+            }
+
+            .emoji {
+                font-size: 28px;
+            }
+        }
     </style>
 </head>
 <body>
-
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#" style="font-size: 30px;">&#128081; KingVlad</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon bg-white"></span>
           </button>
           <div class="nav justify-content-center collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav text-primary ">
@@ -54,14 +71,13 @@
     </nav>
 
     <div class="container">
-
         <div class="d-flex flex-wrap justify-content-around align-items-center"> <!-- Utilisez flex-wrap pour gérer les éléments sur plusieurs lignes si nécessaire -->
-            <div class="text-center" style="margin-top: 5%;">
-                <h1 class="gradient-text">Saluuu; <span class="emoji">&#128075;</span><br>
-                    Je m'appelle LANWI Vladmir <br>alias <span class="emoji">&#128081;</span> kingVlad <span class="emoji">&#128516;</span> ;<br>
-                    je suis un développeur <br> BackEnd, web et mobile<br>
-                    Passionné de la splendeur du code.
-                </h1>
+            <div class="gradient-text" style="margin-top: 5%;">
+                <h1 class="">Saluuu; <span class="emoji">&#128075;</span> </h1>
+                 <h1> Je m'appelle LANWI Vladmir</h1>
+                  <h1>alias <span class="emoji">&#128081;</span> kingVlad <span class="emoji">&#128516;</span> ;</h1> 
+                  <h1> je suis un développeur  BackEnd, web et mobile</h1>  
+                   <h1>Passionné par le code.</h1>
                 <a href="projet.html"class="btn btn-primary">Mes Projets</a>
             </div>
             <div class="bubble">
@@ -71,187 +87,174 @@
 
         <h1 class="text-center text-white" style="margin-top: 10%;">Technologies Utilisées</h1>
 
-        <div class="card-containt d-flex flex-wrap justify-content-center"> <!-- Utilisez flex-wrap pour gérer les éléments sur plusieurs lignes si nécessaire -->
-            <div class="col-md-3 mb-3 bounce">
-                <div class="card bg-dark cardImg " >
-                    <img class="card-img-top techImg" src="assets/images/logo/python.png" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text text-center text-white">PYTHON</p>
-                    </div>
-                </div>
-            </div>  
+        <div class="card-containt d-flex flex-wrap justify-content-center"> 
 
-            <div class="col-md-3 mb-3 bounce" >
-                <div class="card bg-dark cardImg"  >
-                    <img class="card-img-top techImg" src="assets/images/logo/java.png" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text text-center text-white">JAVA</p>
+            <div class="card-containt d-flex flex-wrap justify-content-center"> <!-- Utilisez flex-wrap pour gérer les éléments sur plusieurs lignes si nécessaire -->
+                <div class="col-md-3 mb-3 bounce">
+                    <div class="card bg-dark cardImg " >
+                        <img class="card-img-top techImg" src="assets/images/logo/python.png" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text text-center text-white">PYTHON</p>
+                        </div>
+                    </div>
+                </div>  
+    
+                <div class="col-md-3 mb-3 bounce" >
+                    <div class="card bg-dark cardImg"  >
+                        <img class="card-img-top techImg" src="assets/images/logo/java.png" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text text-center text-white">JAVA</p>
+                        </div>
                     </div>
                 </div>
+    
+                <div class="col-md-3 mb-3 bounce">
+                    <div  class="card bg-dark cardImg" >
+                      <img class="card-img-top techImg" src="assets/images/logo/Dart.png" alt="Card image cap">
+                      <div class="card-body">
+                        <p class="card-text text-center text-white">DART</p>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="col-md-3 mb-3 bounce">
+                    <div  class="card bg-dark cardImg" >
+                      <img class="card-img-top techImg" src="assets/images/logo/html.png" alt="Card image cap">
+                      <div class="card-body">
+                        <p class="card-text text-center text-white">HTML</p>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="col-md-3 mb-3 bounce">
+                    <div  class="card bg-dark cardImg" >
+                      <img class="card-img-top techImg" src="assets/images/logo/css.png" alt="Card image cap">
+                      <div class="card-body">
+                        <p class="card-text text-center text-white">CSS</p>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="col-md-3 mb-3 bounce">
+                    <div  class="card bg-dark cardImg">
+                      <img class="card-img-top techImg" src="assets/images/logo/js.png" alt="Card image cap">
+                      <div class="card-body">
+                        <p class="card-text text-center text-white">JAVASCRIPT</p>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="col-md-3 mb-3 bounce">
+                    <div  class="card bg-dark cardImg">
+                      <img class="card-img-top techImg" src="assets/images/logo/php.png" alt="Card image cap">
+                      <div class="card-body">
+                        <p class="card-text text-center text-white">PHP</p>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="col-md-3 mb-3 bounce">
+                    <div  class="card bg-dark cardImg" >
+                      <img class="card-img-top techImg" src="assets/images/logo/symfony.png" alt="Card image cap">
+                      <div class="card-body">
+                        <p class="card-text text-center text-white">SYMFONY</p>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="col-md-3 mb-3 bounce">
+                    <div  class="card bg-dark cardImg">
+                      <img class="card-img-top techImg" src="assets/images/logo/laravel.png" alt="Card image cap">
+                      <div class="card-body">
+                        <p class="card-text text-center text-white">LARAVEL</p>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="col-md-3 mb-3 bounce">
+                    <div  class="card bg-dark cardImg">
+                      <img class="card-img-top techImg" src="assets/images/logo/django.png" alt="Card image cap">
+                      <div class="card-body">
+                        <p class="card-text text-center text-white">DJANGO</p>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="col-md-3 mb-3 bounce">
+                    <div  class="card bg-dark cardImg">
+                      <img class="card-img-top techImg" src="assets/images/logo/flutter.png" alt="Card image cap">
+                      <div class="card-body">
+                        <p class="card-text text-center text-white">FLUTTER</p>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="col-md-3 mb-3 bounce">
+                    <div  class="card bg-dark cardImg">
+                      <img class="card-img-top techImg" src="assets/images/logo/sql.png" alt="Card image cap">
+                      <div class="card-body">
+                        <p class="card-text text-center text-white">MYSQL</p>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="col-md-3 mb-3 bounce">
+                    <div  class="card bg-dark cardImg">
+                      <img class="card-img-top techImg" src="assets/images/logo/fierbase .png" alt="Card image cap">
+                      <div class="card-body">
+                        <p class="card-text text-center text-white">FIERBASE</p>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="col-md-3 mb-3 bounce">
+                    <div  class="card bg-dark cardImg">
+                      <img class="card-img-top techImg" src="assets/images/logo/github.png" alt="Card image cap">
+                      <div class="card-body">
+                        <p class="card-text text-center text-white">GITHUB</p>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="col-md-3 mb-3 bounce">
+                    <div  class="card bg-dark cardImg">
+                      <img class="card-img-top techImg" src="assets/images/logo/wordpress.png" alt="Card image cap">
+                      <div class="card-body">
+                        <p class="card-text text-center text-white">WORDPRESS</p>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="col-md-3 mb-3 bounce">
+                    <div  class="card bg-dark cardImg">
+                      <img class="card-img-top techImg" src="assets/images/logo/canva.png" alt="Card image cap">
+                      <div class="card-body">
+                        <p class="card-text text-center text-white">CANVA</p>
+                      </div>
+                    </div>
+                  </div> 
+    
+                
+    
             </div>
-
-            <div class="col-md-3 mb-3 bounce">
-                <div  class="card bg-dark cardImg" >
-                  <img class="card-img-top techImg" src="assets/images/logo/Dart.png" alt="Card image cap">
-                  <div class="card-body">
-                    <p class="card-text text-center text-white">DART</p>
-                  </div>
-                </div>
-              </div> 
-              <div class="col-md-3 mb-3 bounce">
-                <div  class="card bg-dark cardImg" >
-                  <img class="card-img-top techImg" src="assets/images/logo/html.png" alt="Card image cap">
-                  <div class="card-body">
-                    <p class="card-text text-center text-white">HTML</p>
-                  </div>
-                </div>
-              </div> 
-              <div class="col-md-3 mb-3 bounce">
-                <div  class="card bg-dark cardImg" >
-                  <img class="card-img-top techImg" src="assets/images/logo/css.png" alt="Card image cap">
-                  <div class="card-body">
-                    <p class="card-text text-center text-white">CSS</p>
-                  </div>
-                </div>
-              </div> 
-              <div class="col-md-3 mb-3 bounce">
-                <div  class="card bg-dark cardImg">
-                  <img class="card-img-top techImg" src="assets/images/logo/js.png" alt="Card image cap">
-                  <div class="card-body">
-                    <p class="card-text text-center text-white">JAVASCRIPT</p>
-                  </div>
-                </div>
-              </div> 
-              <div class="col-md-3 mb-3 bounce">
-                <div  class="card bg-dark cardImg">
-                  <img class="card-img-top techImg" src="assets/images/logo/php.png" alt="Card image cap">
-                  <div class="card-body">
-                    <p class="card-text text-center text-white">PHP</p>
-                  </div>
-                </div>
-              </div> 
-              <div class="col-md-3 mb-3 bounce">
-                <div  class="card bg-dark cardImg" >
-                  <img class="card-img-top techImg" src="assets/images/logo/symfony.png" alt="Card image cap">
-                  <div class="card-body">
-                    <p class="card-text text-center text-white">SYMFONY</p>
-                  </div>
-                </div>
-              </div> 
-              <div class="col-md-3 mb-3 bounce">
-                <div  class="card bg-dark cardImg">
-                  <img class="card-img-top techImg" src="assets/images/logo/laravel.png" alt="Card image cap">
-                  <div class="card-body">
-                    <p class="card-text text-center text-white">LARAVEL</p>
-                  </div>
-                </div>
-              </div> 
-              <div class="col-md-3 mb-3 bounce">
-                <div  class="card bg-dark cardImg">
-                  <img class="card-img-top techImg" src="assets/images/logo/django.png" alt="Card image cap">
-                  <div class="card-body">
-                    <p class="card-text text-center text-white">DJANGO</p>
-                  </div>
-                </div>
-              </div> 
-              <div class="col-md-3 mb-3 bounce">
-                <div  class="card bg-dark cardImg">
-                  <img class="card-img-top techImg" src="assets/images/logo/flutter.png" alt="Card image cap">
-                  <div class="card-body">
-                    <p class="card-text text-center text-white">FLUTTER</p>
-                  </div>
-                </div>
-              </div> 
-              <div class="col-md-3 mb-3 bounce">
-                <div  class="card bg-dark cardImg">
-                  <img class="card-img-top techImg" src="assets/images/logo/sql.png" alt="Card image cap">
-                  <div class="card-body">
-                    <p class="card-text text-center text-white">MYSQL</p>
-                  </div>
-                </div>
-              </div> 
-              <div class="col-md-3 mb-3 bounce">
-                <div  class="card bg-dark cardImg">
-                  <img class="card-img-top techImg" src="assets/images/logo/fierbase .png" alt="Card image cap">
-                  <div class="card-body">
-                    <p class="card-text text-center text-white">FIERBASE</p>
-                  </div>
-                </div>
-              </div> 
-              <div class="col-md-3 mb-3 bounce">
-                <div  class="card bg-dark cardImg">
-                  <img class="card-img-top techImg" src="assets/images/logo/github.png" alt="Card image cap">
-                  <div class="card-body">
-                    <p class="card-text text-center text-white">GITHUB</p>
-                  </div>
-                </div>
-              </div> 
-              <div class="col-md-3 mb-3 bounce">
-                <div  class="card bg-dark cardImg">
-                  <img class="card-img-top techImg" src="assets/images/logo/wordpress.png" alt="Card image cap">
-                  <div class="card-body">
-                    <p class="card-text text-center text-white">WORDPRESS</p>
-                  </div>
-                </div>
-              </div> 
-              <div class="col-md-3 mb-3 bounce">
-                <div  class="card bg-dark cardImg">
-                  <img class="card-img-top techImg" src="assets/images/logo/canva.png" alt="Card image cap">
-                  <div class="card-body">
-                    <p class="card-text text-center text-white">CANVA</p>
-                  </div>
-                </div>
-              </div> 
-
-            <!-- Ajoutez ici les cartes pour les autres technologies -->
 
         </div>
 
         <div class="d-flex flex-wrap justify-content-around text-white" >
-
             <div>
                 <h1 class="text-center">Mes autres Passions</h1>
-                <Ul>
+                <ul>
                     <li>Sport : Tennis ,Basket,Football</li>
                     <li>Gaming</li>
-                    <li>Film, Série</li>
+                    
                     <li>Manga</li>
                     <li>Musique</li>
-                </Ul>
+                </ul>
             </div>
             <div>
                 <h1 class="text-center">Mes autres Compétances</h1>
                 <ul>
                     <li>Designer Canva</li>
                     <li>Travail en équipe</li>
-                    <li>Travail á distance (remote) </li>
+                    <li>Travail à distance (remote)</li>
                 </ul>
             </div>
-
         </div>
 
-
-        <div class="d-flex flex-wrap justify-content-center text-white bg-dark foot"id="contact" >
-
-            <div class="">
-                <h1 class="text-center">Besoins d'un service de qualité? Contactez Moi &#128521;</h1>
-
+        <div class="d-flex flex-wrap justify-content-center text-white bg-dark foot" id="contact">
+            <div>
+                <h1 class="text-center">Besoin d'un service de qualité? Contactez Moi &#128521;</h1>
                 <h4 class="text-center"><img src="assets/images/logo/gmail.png" class="Icone">  :  vladgnouyaro@gmail.com</h4>
                 <h4 class="text-center"> <img src="assets/images/logo/mobile.png" class="Icone">  :+228 93 54 75 86</h4>
-
-
             </div>
-
-
         </div>
-
-
-
-
-
-
-
     </div>
-    
 </body>
 </html>
