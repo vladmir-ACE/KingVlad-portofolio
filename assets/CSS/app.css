@@ -44,6 +44,7 @@ body{
     color: transparent; /* Rend le texte lui-même transparent pour laisser apparaître le dégradé */
     font-size: 40px; /* Ajustez la taille de la police selon vos besoins */
     line-height: 1.5; /* Ajustez l'espacement des lignes selon vos besoins */
+    text-align: start;
 }
 
 .emoji{
@@ -51,7 +52,7 @@ body{
 }
 .techImg{
     width: 150px;
-    height: 150px;
+     height: 150px;
     padding-left:15%;
     padding-top: 10%;
 }
