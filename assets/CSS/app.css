@@ -29,6 +29,10 @@ body{
     object-fit: cover;
 }
 
+.bubleCard{
+    animation: bubbleEffect 3s ease-in-out infinite;
+}
+
 @keyframes bubbleEffect {
     0%, 100% {
         transform: scale(1);
